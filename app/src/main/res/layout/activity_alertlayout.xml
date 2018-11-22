@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/alertlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alertbg"
+
+     >
+
+
+    <EditText
+        android:id="@+id/alertText"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border4"
+        android:drawableLeft="@drawable/mail"
+        android:ems="13"
+        android:hint="사업자등록번호"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:textColorHint="@android:color/black"
+        />
+
+
+
+
+</FrameLayout>
+

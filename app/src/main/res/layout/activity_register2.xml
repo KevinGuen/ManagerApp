@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.earlybro_daeguen.myapplication.RegisterActivity2"
+    android:background="@drawable/login_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/BusinessRegi"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+
+        <EditText
+            android:id="@+id/shopName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/border3"
+            android:hint=" 매장 이름"
+            android:inputType="text"
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:id="@+id/businessNum"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/border3"
+            android:hint=" 사업자 번호"
+            android:inputType="number"
+            android:paddingLeft="15dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:ems="12"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/border3"
+                android:hint=" 매장 주소"
+                android:inputType="textPostalAddress"
+                android:paddingLeft="15dp"
+                />
+
+            <Button
+                android:id="@+id/Gosearch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:background="@color/gray"
+                android:onClick="Gosearch"
+                android:text="주소검색"
+                android:textColor="@color/white"
+                />
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/BusinessImgLoad"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/login2"
+                    android:onClick="LoadImg"
+                    android:text="사업자등록증"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/NextBt2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/login3"
+                    android:onClick="Senddata2"
+                    android:text="다음"
+
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,33 @@
+package com.example.earlybro_daeguen.myapplication;
+
+import com.android.volley.Response;
+import com.android.volley.toolbox.StringRequest;
+
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * Created by Earlybro_DaeGuen on 2017-11-06.
+ */
+public class modifyShop extends StringRequest {
+    final static private String URL = "URL";
+
+
+
+    private Map<String, String> parameters;
+
+    public modifyShop(String shopID, String shopTel, String shopAddress, Response.Listener<String> listener){
+
+        super(Method.POST, URL, listener, null);
+        parameters = new HashMap<>();
+        parameters.put("shopID", shopID);
+        parameters.put("shopTel", shopTel);
+        parameters.put("shopAddress", shopAddress);
+
+    }
+
+    @Override
+    public Map<String, String> getParams(){
+        return parameters;
+    }
+}
